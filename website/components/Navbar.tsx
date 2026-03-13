@@ -5,6 +5,7 @@ export default function Navbar() {
 
       <div className="flex gap-6">
         <a href="/">Home</a>
+        <a href="/about">About</a>
         <a href="/events">Events</a>
         <a href="/team">Team</a>
         <a href="/blogs">Blogs</a>
