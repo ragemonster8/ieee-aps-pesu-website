@@ -1,14 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/events", label: "Events" },
-  { href: "/team", label: "Team" },
-  { href: "/blogs", label: "Blogs" },
-  { href: "/contact", label: "Contact" },
-];
+import { navigationLinks, siteBranding } from "@/content/site";
 
 export default function Navbar() {
   return (
@@ -24,14 +16,14 @@ export default function Navbar() {
           />
           <div>
             <p className="text-xs uppercase tracking-[0.28em] text-blue-300/80">
-              IEEE AP-S
+              {siteBranding.eyebrow}
             </p>
-            <h1 className="text-lg font-semibold text-white">PESU Student Chapter</h1>
+            <h1 className="text-lg font-semibold text-white">{siteBranding.title}</h1>
           </div>
         </Link>
 
         <div className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/5 px-2 py-2 md:flex">
-          {links.map((link) => (
+          {navigationLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
