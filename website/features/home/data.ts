@@ -1,7 +1,7 @@
 export const heroContent = {
   title: "IEEE AP-S PESU",
   description: "Hands-on RF research, antenna design, and wireless innovation.",
-  campus: "PES University • RR Campus",
+  campus: "PES University \u2022 RR Campus",
   tagline: "From Inception to Impact",
   primaryCta: {
     href: "/events",

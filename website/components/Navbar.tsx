@@ -4,7 +4,7 @@ import { navigationLinks, siteBranding } from "@/content/site";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#020617]/90 backdrop-blur">
+    <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-4">
           <Image
